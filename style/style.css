@@ -1,0 +1,28 @@
+.navbar-dropdown {
+    background-color: black;
+}
+
+#main  {
+    background-image: url("burger-main.jpg");
+    background-size: cover;
+}
+
+#menu {
+    background-image: url("donuts.jpg");
+    background-size: cover;
+}
+
+.is-child {
+    background-color: transparent;
+    border: 3px black solid
+}
+
+#contact {
+    background-image: url("drinks.jpg");
+    background-size: cover;
+}
+
+.footer {
+    padding: 1.5rem;
+    background-color: transparent;
+}
