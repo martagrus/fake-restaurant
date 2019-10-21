@@ -11,6 +11,8 @@
     <title>Fake Restaurant</title>
 </head>
 <body>
+    <script src="script.js"></script>
+
     <section id="main" class="hero is-large is-primary is-bold">
         <nav class="navbar is-transparent">
             <div class="navbar-brand navbar-item">
@@ -20,14 +22,12 @@
                 <span></span>
                 <span></span>
                 </div>
-            </div>
-                
+            </div> 
             <div id="navbarExampleTransparentExample" class="navbar-menu">
                 <div class="navbar-start">
                     <p class="navbar-item">The Fake Restaurant</p>
                 </div>
-            </div>
-                
+            </div> 
             <div class="navbar-end">
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link" href="#menu">
@@ -119,6 +119,24 @@
                         </article>
                     </div>
                 </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="modals">
+        <div id="modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title"></p>
+                <button id='delete' class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <ol>
+                    <li>Item 1 <span>$$</span></li>
+                    <li>Item 2 <span>$$</span></li>
+                </ol>
+              </section>
             </div>
         </div>
       </section>
