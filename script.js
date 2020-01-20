@@ -1,5 +1,4 @@
-let $breakfast, $brunch, $lunch, $dinner, $desserts, $drinks;
-let $delete;
+let $breakfast, $brunch, $lunch, $dinner, $desserts, $drinks, $delete;
 
 main = () => {
     prepareElements();
