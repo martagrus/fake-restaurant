@@ -30,19 +30,7 @@
                 </div>
             </div> 
             <div class="navbar-end">
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" href="#menu">Menu</a>
-                    <div class="navbar-dropdown is-boxed is-right">
-                        <a class="navbar-item" href="#breakfast">Breakfast</a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item" href="#brunch">Brunch (weekends only)</a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item" href="#lunch">Lunch</a>
-                        <a class="navbar-item" href="#dinner">Dinner</a>
-                        <a class="navbar-item" href="#desserts">Desserts</a>
-                        <a class="navbar-item" href="#drinks">Drinks</a>
-                    </div>
-                </div>
+                <a class="navbar-item" href="#menu">Menu</a>
                 <a class="navbar-item" href="#contact">Contact us</a>
             </div>
         </nav>
@@ -111,10 +99,14 @@
                 <button id='delete' class="delete" aria-label="close"></button>
               </header>
               <section class="modal-card-body">
-                <ol>
-                    <li>Item 1 <span>$$</span></li>
-                    <li>Item 2 <span>$$</span></li>
-                </ol>
+                <table id="table" class="table table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                </table>
               </section>
             </div>
         </div>
@@ -146,6 +138,6 @@
         </footer>
       </section>
 
-      
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
