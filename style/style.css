@@ -42,7 +42,7 @@ body {
 }
   
 #menu {
-    height: 100vh;
+    height: 120vh;
     background-image: url("donuts.jpg");
     background-size: cover;
 }
@@ -54,10 +54,6 @@ body {
 
 #main-subtitle {
     font-size: 4vh;
-}
-
-#menu {
-    height: 130vh;
 }
 
 .title.is-1 {
@@ -121,7 +117,11 @@ article .title, .subtitle {
     background-color: rgba(255,255,255,.7);
 }
 
-@media (min-width: 768px) {
+@media screen and (orientation: landscape){
+    .tile:not(.is-child) {
+        display: flex;
+    }
+
     #main-title {
         margin: 10% 0;
         font-size: 8vh;
@@ -131,9 +131,17 @@ article .title, .subtitle {
         font-size: 6vh;
     }
 
+    #menu {
+        height: 100vh;
+    }
+
     #contact-data, .social {
         margin: 5% 0;
     }
+}
+
+@media (min-width: 768px) {
+    
 
     .title.is-3 {
         font-size: 4vh;
@@ -147,10 +155,6 @@ article .title, .subtitle {
 
     #main-subtitle {
         margin-top: 5%;
-    }
-
-    #menu {
-        height: 100vh;
     }
 
     article .title {

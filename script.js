@@ -3,6 +3,7 @@ let $breakfast, $brunch, $lunch, $dinner, $desserts, $drinks, $delete, $table, $
 main = () => {
     prepareElements();
     prepareEvents();
+    closeModal();
 }
 
 prepareElements = () => {
