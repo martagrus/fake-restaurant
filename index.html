@@ -18,11 +18,6 @@
         <nav class="navbar is-transparent">
             <div class="navbar-brand navbar-item">
                 <img src="style/logo.png" alt="Fake Restaurant logo" width="30" height="30">
-                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-                </div>
             </div> 
             <div id="navbarExampleTransparentExample" class="navbar-menu">
                 <div class="navbar-start">
@@ -95,19 +90,21 @@
             <div class="modal-background"></div>
             <div class="modal-card">
               <header class="modal-card-head">
-                <p class="modal-card-title"></p>
+                <p id="modal-title" class="modal-card-title has-text-weight-bold"></p>
                 <button id='delete' class="delete" aria-label="close"></button>
               </header>
               <section class="modal-card-body">
-                <table id="table" class="table table is-fullwidth">
+                <table id="table" class="table is-fullwidth">
                     <thead>
                         <tr>
-                            <th>Item</th>
-                            <th>Price</th>
+                            <th class="has-text-weight-bold">Item</th>
+                            <th class="has-text-weight-bold">Price</th>
                         </tr>
                     </thead>
                 </table>
               </section>
+              <footer class="modal-card-foot">
+              </footer>
             </div>
         </div>
       </section>

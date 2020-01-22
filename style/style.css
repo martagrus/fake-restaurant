@@ -6,6 +6,16 @@ body {
     font-family: 'PT Serif Caption', serif;
 }
 
+.navbar, .navbar-end {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-end {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
 .navbar-dropdown {
     background-color: black;
 }
@@ -29,9 +39,8 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,.15);
-  }
+}
   
-
 #menu {
     height: 100vh;
     background-image: url("donuts.jpg");
@@ -39,10 +48,19 @@ body {
 }
 
 #main-title {
-    font-size: 8vh;
+    margin: 20% 0;
+    font-size: 6vh;
 }
 
 #main-subtitle {
+    font-size: 4vh;
+}
+
+#menu {
+    height: 130vh;
+}
+
+.title.is-1 {
     font-size: 6vh;
 }
 
@@ -52,8 +70,12 @@ body {
 }
 
 .box:hover{
-    background-color: black;
+    background-color: rgba(255,255,255,.6);
     cursor: pointer;
+}
+
+article .title, .subtitle {
+    font-size: 2.5vh;
 }
 
 #contact {
@@ -63,24 +85,79 @@ body {
 }
 
 #contact-data {
-    margin-top: 5%;
+    margin: 15% 0;
 }
 
 #contact-data a {
     color: rgba(255,255,255,.7);
 }
 
-.footer {
-    padding: 1.5rem;
-    background-color: transparent;
+.title.is-3 {
+    font-size: 3vh;
 }
 
 .social {
     cursor: pointer;
+    margin: 15% 0;
 }
 
 .social a {
     margin-right: 10px;
     color: rgba(255,255,255,.7);
     font-size: 200%;
+}
+
+.social a:hover {
+    color: rgba(255,255,255,.9);
+}
+
+.footer {
+    padding: 1.5rem;
+    font-size: 2vh;
+    background-color: transparent;
+}
+
+.modal-card-foot, .modal-card-head {
+    background-color: rgba(255,255,255,.7);
+}
+
+@media (min-width: 768px) {
+    #main-title {
+        margin: 10% 0;
+        font-size: 8vh;
+    }
+    
+    #main-subtitle {
+        font-size: 6vh;
+    }
+
+    #contact-data, .social {
+        margin: 5% 0;
+    }
+
+    .title.is-3 {
+        font-size: 4vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    #main-title {
+        margin: unset;
+    }
+
+    #main-subtitle {
+        margin-top: 5%;
+    }
+
+    #menu {
+        height: 100vh;
+    }
+
+    article .title {
+        font-size: 5vh;
+    }
+
+    article .subtitle {
+        font-size: 4vh;
+    }
 }
